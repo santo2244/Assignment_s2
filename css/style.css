@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.boxes {
+    border: 1px solid black;
+    height: 280px;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.box-p {
+    margin: 55px 10px 10px 10px;
+    text-align: justify;
+}
+
+.box-title {
+    border: 1px solid black;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    right: -1px;
+    width: 200px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95%;
+}
+
+.css-body-bk {
+    background-color: #40bad5;
+}
+
+.css-title-bk {
+    background-color: #035aa6;
+}
+
+.html-body-bk {
+    background-color: #fa7d09;
+}
+
+.html-title-bk {
+    background-color: #ff4301;
+}
+
+.js-body-bk {
+    background-color: #23f535;
+}
+
+.js-title-bk {
+    background-color: #19b40b;
+}
+
+@media (min-width: 1200px) {
+    .section1 {
+        float: left;
+        width: 31%;
+    }
+
+    .section2 {
+        float: left;
+        width: 31%;
+    }
+
+    .section3 {
+        float: left;
+        width: 31%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .section1 {
+        float: left;
+        margin-bottom: 15px;
+        width: 46%;
+    }
+
+    .section2 {
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        width: 46%;
+    }
+
+    .section3 {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: inline-block;
+    }
+
+    .section1 {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .section2 {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .section3 {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
